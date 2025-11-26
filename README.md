@@ -1,23 +1,5 @@
-# JavaFX Basit Hesap Makinesi (demo11)
-
-Bu proje, JavaFX ve FXML kullanılarak (SceneBuilder ile tasarlanmış) basit bir hesap makinesi arayüzü ve denetleyicisini içerir. Uygulama toplama, çıkarma, çarpma, bölme ve ondalıklı sayılarla işlem yapabilir.
-
-## Özellikler
-
-- JavaFX `GridPane` ile tasarlanmış, görseldeki örneğe benzer sade arayüz
-- Sonuçların ve girilen sayıların gösterildiği bir ekran (`TextField`)
-- Temel işlemler:
-  - Toplama (`+`)
-  - Çıkarma (`-`)
-  - Çarpma (`x`)
-  - Bölme (`÷`)
-- Ek tuşlar:
-  - `AC` — Tümünü temizler, ekranı ve iç durumu sıfırlar
-  - `←` — Geri alma, ekrandaki son karakteri siler
-  - `.` — Ondalık sayı girişi
-- Ondalıklı sayılarla işlem yapabilme
-
-> Not: Hesaplama mantığı tamamen `CalculatorController` sınıfında tutulur, arayüz ise FXML dosyası üzerinden SceneBuilder ile düzenlenebilir.
+# JavaFX Basit Hesap Makinesi
+JavaFX lab uygulamasıdır.
 
 ## Kurulum ve Çalıştırma
 
@@ -33,8 +15,6 @@ Proje klasörüne geçin ve Maven ile JavaFX uygulamasını başlatın:
 ```bash
 mvn clean javafx:run
 ```
-
-Bu komut, `com.example.demo11.HelloApplication` sınıfını çalıştırır ve JavaFX penceresinde hesap makinesini açar.
 
 ## Proje Yapısı
 
@@ -56,7 +36,6 @@ Arayüzü SceneBuilder ile düzenlemek için:
 1. SceneBuilder'ı açın.
 2. **Open Existing Document** menüsünden
    `src/main/resources/com/example/demo11/calculator-view.fxml` dosyasını seçin.
-3. Butonların `onAction` özellikleri ve `fx:controller` alanı zaten `CalculatorController` ile eşleştirilmiştir.
 
 ## Lisans
 
