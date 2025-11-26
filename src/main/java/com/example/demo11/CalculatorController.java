@@ -66,7 +66,6 @@ public class CalculatorController {
     @FXML
     private void handleOperator(javafx.event.ActionEvent event) {
         String op = ((Button) event.getSource()).getText();
-        // Ekranda görünen sembolleri dahili operatörlere çevir
         if ("x".equals(op)) {
             op = "*";
         } else if ("÷".equals(op)) {

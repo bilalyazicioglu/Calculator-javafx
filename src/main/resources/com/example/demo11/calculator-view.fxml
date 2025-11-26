@@ -13,7 +13,6 @@
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
 
-    <!-- Kolon genişlikleri -->
     <columnConstraints>
         <ColumnConstraints prefWidth="60.0" />
         <ColumnConstraints prefWidth="60.0" />
@@ -21,7 +20,6 @@
         <ColumnConstraints prefWidth="60.0" />
     </columnConstraints>
 
-    <!-- Satır yükseklikleri -->
     <rowConstraints>
         <RowConstraints prefHeight="40.0" />
         <RowConstraints prefHeight="50.0" />
@@ -32,34 +30,28 @@
     </rowConstraints>
 
     <children>
-        <!-- Ekran -->
         <TextField fx:id="display" editable="false" text="0" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="0" />
 
-        <!-- 1. satır -->
         <Button onAction="#handleBackspace" text="←" GridPane.columnIndex="0" GridPane.rowIndex="1" />
         <Button onAction="#handleAllClear" text="AC" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <Button onAction="#handleOperator" text="÷" GridPane.columnIndex="2" GridPane.rowIndex="1" />
         <Button onAction="#handleOperator" text="x" GridPane.columnIndex="3" GridPane.rowIndex="1" />
 
-        <!-- 2. satır -->
         <Button onAction="#handleDigit" text="7" GridPane.rowIndex="4" />
         <Button onAction="#handleDigit" text="8" GridPane.columnIndex="1" GridPane.rowIndex="4" />
         <Button onAction="#handleDigit" text="9" GridPane.columnIndex="2" GridPane.rowIndex="4" />
         <Button onAction="#handleOperator" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
 
-        <!-- 3. satır -->
         <Button onAction="#handleDigit" text="4" GridPane.columnIndex="0" GridPane.rowIndex="3" />
         <Button onAction="#handleDigit" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
         <Button onAction="#handleDigit" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
         <Button onAction="#handleOperator" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
 
-        <!-- 4. satır -->
         <Button onAction="#handleDigit" text="1" GridPane.rowIndex="2" />
         <Button onAction="#handleDigit" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <Button onAction="#handleDigit" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
         <Button onAction="#handleEquals" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
 
-        <!-- 5. satır -->
         <Button onAction="#handleDigit" text="0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
         <Button onAction="#handleDot" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
     </children>
