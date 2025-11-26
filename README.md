@@ -1,4 +1,4 @@
-# JavaFX Basit Hesap Makinesi (demo11)
+# JavaFX Basit Hesap Makinesi
 
 Bu proje, JavaFX ve FXML kullanılarak (SceneBuilder ile tasarlanmış) basit bir hesap makinesi arayüzü ve denetleyicisini içerir. Uygulama toplama, çıkarma, çarpma, bölme ve ondalıklı sayılarla işlem yapabilir.
 
