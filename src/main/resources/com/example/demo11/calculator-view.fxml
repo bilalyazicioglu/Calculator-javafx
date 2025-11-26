@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.demo11.CalculatorController"
+          hgap="5.0" vgap="5.0">
+
+    <padding>
+        <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+    </padding>
+
+    <!-- Kolon genişlikleri -->
+    <columnConstraints>
+        <ColumnConstraints prefWidth="60.0"/>
+        <ColumnConstraints prefWidth="60.0"/>
+        <ColumnConstraints prefWidth="60.0"/>
+        <ColumnConstraints prefWidth="60.0"/>
+    </columnConstraints>
+
+    <!-- Satır yükseklikleri -->
+    <rowConstraints>
+        <RowConstraints prefHeight="40.0"/>
+        <RowConstraints prefHeight="50.0"/>
+        <RowConstraints prefHeight="50.0"/>
+        <RowConstraints prefHeight="50.0"/>
+        <RowConstraints prefHeight="50.0"/>
+        <RowConstraints prefHeight="50.0"/>
+    </rowConstraints>
+
+    <children>
+        <!-- Ekran -->
+        <TextField fx:id="display" text="0" editable="false"
+                   GridPane.columnIndex="0" GridPane.rowIndex="0"
+                   GridPane.columnSpan="4"/>
+
+        <!-- 1. satır -->
+        <Button text="←" GridPane.columnIndex="0" GridPane.rowIndex="1"
+                onAction="#handleBackspace"/>
+        <Button text="AC" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                onAction="#handleAllClear"/>
+        <Button text="÷"  GridPane.columnIndex="2" GridPane.rowIndex="1"
+                onAction="#handleOperator"/>
+        <Button text="x"  GridPane.columnIndex="3" GridPane.rowIndex="1"
+                onAction="#handleOperator"/>
+
+        <!-- 2. satır -->
+        <Button text="7" GridPane.columnIndex="0" GridPane.rowIndex="2"
+                onAction="#handleDigit"/>
+        <Button text="8" GridPane.columnIndex="1" GridPane.rowIndex="2"
+                onAction="#handleDigit"/>
+        <Button text="9" GridPane.columnIndex="2" GridPane.rowIndex="2"
+                onAction="#handleDigit"/>
+        <Button text="-" GridPane.columnIndex="3" GridPane.rowIndex="2"
+                onAction="#handleOperator"/>
+
+        <!-- 3. satır -->
+        <Button text="4" GridPane.columnIndex="0" GridPane.rowIndex="3"
+                onAction="#handleDigit"/>
+        <Button text="5" GridPane.columnIndex="1" GridPane.rowIndex="3"
+                onAction="#handleDigit"/>
+        <Button text="6" GridPane.columnIndex="2" GridPane.rowIndex="3"
+                onAction="#handleDigit"/>
+        <Button text="+" GridPane.columnIndex="3" GridPane.rowIndex="3"
+                onAction="#handleOperator"/>
+
+        <!-- 4. satır -->
+        <Button text="1" GridPane.columnIndex="0" GridPane.rowIndex="4"
+                onAction="#handleDigit"/>
+        <Button text="2" GridPane.columnIndex="1" GridPane.rowIndex="4"
+                onAction="#handleDigit"/>
+        <Button text="3" GridPane.columnIndex="2" GridPane.rowIndex="4"
+                onAction="#handleDigit"/>
+        <Button text="=" GridPane.columnIndex="3" GridPane.rowIndex="4"
+                GridPane.rowSpan="2" onAction="#handleEquals"/>
+
+        <!-- 5. satır -->
+        <Button text="0" GridPane.columnIndex="0" GridPane.rowIndex="5"
+                GridPane.columnSpan="2" onAction="#handleDigit"/>
+        <Button text="." GridPane.columnIndex="2" GridPane.rowIndex="5"
+                onAction="#handleDot"/>
+    </children>
+</GridPane>
